@@ -37,3 +37,5 @@ Imp note  :- the merge conflict will occur when the we want to merge our branch 
 For the git merge conflict we can also use the command git mergetool 
 
 Git worlfow
+
+Git new
