@@ -1,0 +1,39 @@
+How to install git in uuntu ?
+1. Sudo apt install git
+2. git init :- in the current pwd 
+git config --global user.name "git user name"
+git cpnfig --global user.email "git email address"
+adding ls files to git :- git add file name or . for all files 
+show last changes :- git log 
+
+how to check the user name :- get config user.name,  get config user.email, git config --list 
+
+how to check what all files are added :- git status 
+
+there is another way to ignore a file from getting commited what we will do in this case we will create a .gitignore folder and store the files in that 
+
+How to add repository in local system :- git remote add origin <url from gituhb>
+HOw to push data :- git push origin
+
+How to add a branch to main :- git merge <file name>
+how to check what all branches are added :- git branch 
+how to add a branch to local(own pc) :- git branch <Branch name> 
+How to switch to anthor branch Local :- git checkout <Branch name>
+
+How to add a local branch on github :- git push --set-upstream origin feature1
+
+How to pull the new data from github :- git pull
+
+How to clone a repository(clone any repo to another folder in local system) :- git clone <url from github>
+How to save the changes without commiting :- git stast -u
+How to revert changes in git :- git revert <commit id>
+How to check the difference between two versions :- git diff <commit id of version x> <commit id of version y>
+How to merge combine your branch with master :- git merge<source-branch-name>
+another command 
+git rebase <source name> :- it never create any history and merge the branches
+
+Imp note  :- the merge conflict will occur when the we want to merge our branch to main or master but it is updated or old version of master or main
+
+For the git merge conflict we can also use the command git mergetool 
+
+Git worlfow
