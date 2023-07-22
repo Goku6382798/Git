@@ -1,0 +1,43 @@
+Commands used in docker file 
+
+It will always start with 
+From ubuntu
+now whatever commands will run those will be executed over ubuntu
+
+add command it is used to add files to the container being built. The syntax used is : 
+ADD <source> <Destination in container>
+ADD . /var/www/html
+
+The RUN keyword is used to add layers to the base image, by installing components. Each RUN statements adds a new layer to the docker image. 
+
+EXAMP :- FROM ubuntu 
+RUN apt-get update
+RUN apt-get -y install apache2
+ADD . /var/www/html
+
+The CMD keyword is used to run commands on the start of the container. These commands run only when there is no argument specified while running the container
+
+
+ EXAMP :- FROM ubuntu 
+RUN apt-get update
+RUN apt-get -y install apache2
+ADD . /var/www/html
+CMD apachectl -D FOREGROUND
+
+The ENTRYPOINT keyword is used strictly to run commands the moment the container intializes. The difference between CMD and ENTRYPOINT. ENTRYPOINT will run irrespective of the fact whether the argument is specified or not.
+
+ EXAMP :- FROM ubuntu 
+RUN apt-get update
+RUN apt-get -y install apache2
+ADD . /var/www/html
+ENTRYPOINT apachectl -D FOREGROUND 
+
+
+The ENV keyword is used to define environment variables in the container runtime.
+
+ EXAMP :- FROM ubuntu 
+RUN apt-get update
+RUN apt-get -y install apache2
+ADD . /var/www/html
+ENTRYPOINT apachectl -D FOREGROUND 
+ENV name Devops Intellipaat
