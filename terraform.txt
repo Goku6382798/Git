@@ -10,3 +10,8 @@ Terraform apply :- it will run the code and create the given resource
 
 Terraform destroy :- It will start removing resourcess
 Terraform validate :- Its a command for validating the code for terraform 
+
+
+
+hahahahahahhahaha
+I love sex
