@@ -39,3 +39,5 @@ For the git merge conflict we can also use the command git mergetool
 Git worlfow
 
 Git new
+
+Whenever git doesn't work just sign out and in 

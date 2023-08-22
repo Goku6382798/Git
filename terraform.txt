@@ -1,0 +1,17 @@
+What does the terraform state file contains ??
+Ans :- after running the code and creating he instances it contains all the code what all files u r creating 
+
+Commands before using the temlate for instances (universal command for aws and azure) 
+Go to terraform folder cd .\terraform\
+Then terraform init 
+Then terraform plan :- it will compare the existing code with new one
+
+Terraform apply :- it will run the code and create the given resource
+
+Terraform destroy :- It will start removing resourcess
+Terraform validate :- Its a command for validating the code for terraform 
+
+
+
+hahahahahahhahaha
+I love sex
